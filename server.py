@@ -18,7 +18,7 @@ if retureCode == 0:
     retureCode = subprocessor.call(args)
     if retureCode == 0:
         print('Containers are up, give them a bit time before creating table.')
-        time.sleep(30)
+        time.sleep(10)
 
         conn = pymysql.connect(host='127.0.0.1',port=9906,user='root',passwd='1234',db='june-test')
         cur = conn.cursor()
@@ -46,3 +46,5 @@ if retureCode == 0:
 
         cur.close()
         conn.close()
+else:
+    print('Failed to build images. Please check if Docker Destop is running.')
