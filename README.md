@@ -47,7 +47,12 @@ OpenQuestions:
   6.Configure the Security Group of Database that only allow traffic from the EC2 Intances the we deployed in Step3.
     Security Group of the ALB deployed in Step 4 that will be open to public.
     Security Group of the EC2 instances will accept traffic from ALB and go to Database.
-    
+  
+  7.Monitoring:
+    1.) VPC flow to trace traffic.
+    2.) Cloudwatch for application logs and metrics.
+    3.) Can also use some third party tools like Sumologic and Nagios.
+
   Question2:
     Install Docker desktop in this windows 10 machine.
 
