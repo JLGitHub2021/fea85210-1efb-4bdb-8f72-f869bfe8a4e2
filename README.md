@@ -53,6 +53,8 @@ OpenQuestions:
     2.) Cloudwatch for application logs and metrics.
     3.) Can also use some third party tools like Sumologic and Nagios.
 
+  8. Deploy Public URL use Route 53 (Domain name and records).
+
   Question2:
     Install Docker desktop in this windows 10 machine.
 
