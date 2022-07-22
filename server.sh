@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 db_init() {
     docker exec -i mysql mysql -uroot -p1234 june-test < prepareTable.sql
@@ -9,7 +9,7 @@ build_images() {
 }
 
 run_containers() {
-    docker-compose up
+    docker-compose up -d
 }
 
 stop_containers() {
@@ -26,4 +26,10 @@ start() {
     db_init
 }
 
-"$@"
+if declare -f "$1" >/dev/null;
+then
+    "$@"
+else
+    echo "'$1' is not a known function name" >&2
+    exit 1
+fi
