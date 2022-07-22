@@ -4,9 +4,15 @@ https://github.com/krepysh-spec/lamp-docker-php-skeleton
 
 
 1. Open a command prompt in this directory.
-2. Run "python server.py".
-    - This script will build images and run containders.
-    - Create a table "june-table" and insert 2 rows sample data.
+2. Run "server.sh start". This command will
+    -  build images
+    -  run all containers
+    -  Create a table "june-table" and insert 2 rows sample data.
+
+  other commands you can use:
+    - "server.sh stop_containers" to stop all running containers
+    - "server.sh restart_containersstop_containers" to restart all running containers
+
 
     website url is http://127.0.0.1:80
 
