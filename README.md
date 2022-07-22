@@ -3,15 +3,15 @@ https://www.section.io/engineering-education/dockerized-php-apache-and-mysql-con
 https://github.com/krepysh-spec/lamp-docker-php-skeleton
 
 
-1. Open a command prompt in this directory.
-2. Run "server.sh start". This command will
+1. Open a Git Bash in this directory. If you don't have it installed, install from this link: https://git-scm.com/downloads
+2. Run "bash server.sh start". This command will
     -  build images
     -  run all containers
     -  Create a table "june-table" and insert 2 rows sample data.
 
   other commands you can use:
-    - "server.sh stop_containers" to stop all running containers
-    - "server.sh restart_containersstop_containers" to restart all running containers
+    - "bash server.sh stop_containers" to stop all running containers
+    - "bashserver.sh restart_containers" to restart all running containers
 
 
     website url is http://127.0.0.1:80
